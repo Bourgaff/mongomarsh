@@ -57,7 +57,7 @@ mongoose.Promise = Promise;
 
 // ##LÉO##
 // Remplacer "mongo://localhost/tchat" par "mongodb://admin:admin@ds014578.mlab.com:14578/marshmallow" pour se connecter à la base de données en ligne
-mongoose.connect("mongodb://admin:admin@ds014578.mlab.com:14578/marshmallow", (err) => {
+mongoose.connect("mongodb://admin:admin@ds247759.mlab.com:47759/marshmongo", (err) => {
     signale.success("Connexion établie avec la base de données");
 });
 
