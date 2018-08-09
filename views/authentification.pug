@@ -1,0 +1,47 @@
+//- Inclut le code de layout.pug
+include includes/layout
+    //- Carte Material Design
+    .mdl-card.mdl-shadow--6dp.mrsh-card-panel
+      //- Création de deux blocs apparaissant au même endroit mais séparés en deux onglets ("tabs")
+      .mdl-tabs.mdl-js-tabs
+        .mdl-tabs__tab-bar.bg-pink
+          // Première tab : connexion, seconde : créer son compte
+          a.mdl-tabs__tab.white(href="#connexion-panel").
+            Connexion
+          a.mdl-tabs__tab.white(href="#account-panel").
+            Cr&eacute;er un compte
+        //- Carte Material Design contenant les formulaires pour se connecter
+        #connexion-panel.mdl-tabs__panel
+          .mdl-card
+            form(action="#")
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input(type="email")
+                label.mdl-textfield__label Adresse-mail
+            form(action="#")
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input(type="password")
+                label.mdl-textfield__label Mot de passe
+            .mdl-card__actions.mdl-card--border
+              a(href="tchat")
+                button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--accent.mrsh-tab-button Se connecter
+        //- Carte Material Design contenant les formulaires pour se connecter
+        #account-panel.mdl-tabs__panel.is-active
+          .mdl-card
+            form(action="#")
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input(type="text")
+                label.mdl-textfield__label Pseudo
+            form(action="#")
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input(type="email")
+                label.mdl-textfield__label Adresse-mail
+            form(action="#")
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input(type="password")
+                label.mdl-textfield__label Mot de passe
+            .mdl-card__actions.mdl-card--border
+              a(href="tchat")
+                button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--accent.mrsh-tab-button.
+                  Cr&eacute;er son compte
+//- Inclut le code de script.pug
+include includes/script

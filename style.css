@@ -1,0 +1,268 @@
+/* Polices d'écritures importées depuis Google Font */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/* Layout */
+
+.mrsh-layout-title {
+    /* Titre du layout */
+    font-family: 'Roboto Mono', monospace;
+}
+
+.mrsh-github {
+    /* Taille du logo GitHub */
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Couleurs */
+
+.bg-pink {
+    background-color: rgb(255, 64, 129);
+}
+
+.bg-indigo {
+    background-color: rgb(63, 81, 181)
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Menu */
+
+.mrsh-icon {
+    /* Disposition des icônes du menu latéral */
+    line-height: 24px;
+    float: right;
+}
+
+
+/* Cartes */
+
+.mrsh-card {
+    /* Carte couleur indigo juste en dessous du layout sur la page d'accueil */
+    width: 100%;
+    border-radius: 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.mrsh-title {
+    /* Disposition du titre "Marshmallow" sur la page d'accueil */
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    text-align: center;
+}
+
+.mrsh-title-text {
+    /* Titre "Marshmallow" sur la page d'accueil */
+    font-size: 8vw;
+    font-family: 'Karla', sans-serif;
+}
+
+.mrsh-subtitle {
+    /* Texte sous le titre "Marshmallow" sur la page d'accueil */
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 2vw;
+    padding-bottom: 5%;
+    line-height: 1.2em;
+}
+
+.mrsh-card-panel {
+    /* Disposition des "tabs" sur la page d'authentification */
+    margin: 5% auto 5% auto;
+}
+
+.mrsh-prbl-card {
+    /* Format de la carte sur la page des roblématiques rencontrées */
+    width: 90%;
+    margin: 2% auto 2% auto;
+    padding: 2%;
+}
+
+
+/* Flexbox */
+
+.mrsh-flex-container {
+    /* Flexbox pour la section contenant l'image et la description du site sur la page d'accueil */
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.mrsh-flex {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mrsh-intro {
+    /* Description du site sur la page d'accueil */
+    text-align: justify;
+    padding: 2% 12% 2% 0%;
+}
+
+.mrsh-illustration {
+    /* Image sur la page d'accueil */
+    width: 50%;
+    margin: 5% 20% 5% 20%;
+    display: flex;
+}
+
+
+/* Footer */
+
+.mrsh-footer {
+    /* Taille du footer en bas de la page d'accueil */
+    height: 10vh;
+}
+
+
+/* Tchat */
+
+.mrsh-tchat {
+    margin: 2% 35% 2% 35%;
+    width: 30%;
+    display: flex;
+}
+
+.mrsh-tchat-content {
+    height: 65vh;
+    overflow-y: scroll;
+}
+
+.mrsh-tchat-textarea {
+    position: sticky;
+    bottom: 0;
+}
+
+.mrsh-tchat-textfield {
+    width: 100%;
+}
+
+.mdl-list__item .mdl-list__item-primary-content .mdl-list__item-avatar {
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+
+.mdl-list__item-text-body {
+    display: flex;
+}
+
+.mdl-card {
+    min-height: 0;
+}
+
+.mrsh-dialog {
+    position: absolute;
+    z-index: 99;
+    top: 15vw;
+}
+
+.mrsh-avatar {
+    margin-right: 16px;
+    margin-bottom: 24px;
+    float: left;
+    border-radius: 100%;
+}
+
+.mrsh-heure {
+    font-family: 'Roboto Mono', monospace;
+    vertical-align: center;
+    font-size: 0.6vw;
+}
+
+/* Authentification */
+
+form {
+    padding: 2% 5% 2% 5%;
+}
+
+.mrsh-tab-button {
+    float: right;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1280px) {
+    /* Pour les écrans HD */
+    .mrsh-flex-container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .mrsh-intro {
+        margin: 2% 5% 2% 5%;
+        line-height: 1.2;
+        padding: 0;
+        font-size: 2vw;
+    }
+    .mrsh-illustration {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .mrsh-flex {
+        width: 100%;
+    }
+    .mrsh-tchat {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+        display: flex;
+        padding: 0;
+    }
+    .mrsh-heure {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    /* Pour les terminaux mobiles */
+    .mrsh-title-text {
+        font-size: 14vw;
+    }
+    .mrsh-subtitle {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        font-size: 7vw;
+        padding-bottom: 5%;
+    }
+    .mrsh-intro {
+        margin: 2% 8% 2% 8%;
+        line-height: 1.2;
+        font-size: 6vw;
+        padding: 0;
+    }
+    .mrsh-illustration {
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    .mrsh-tab-button {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .mrsh-tchat {
+        margin: 5% 6% 5% 6%;
+        width: 88%;
+        display: flex;
+    }
+    .mrsh-dialog {
+        position: absolute;
+        z-index: 99;
+        top: 25vh;
+    }
+}

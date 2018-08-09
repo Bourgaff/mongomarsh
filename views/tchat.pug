@@ -1,0 +1,26 @@
+//- Inclut le code de layout.pug
+include includes/layout
+    //- Carte Material Design
+    .mdl-card.mdl-shadow--6dp.mrsh-tchat.mrsh-tchat-content
+      //- Liste 
+      ul.mdl-list
+        //- Endroit où apparaitront les messages 
+        #messages
+    //- Carte Material Design     
+    .mdl-card.mdl-shadow--6dp.mrsh-tchat.mrsh-tchat-textarea 
+      .mdl-card__actions.mdl-card--border
+        //- Formulaire pour entrer les messages
+        form#send(autocomplete="off") 
+          .mdl-textfield.mdl-js-textfield.mrsh-tchat-textfield
+            input#txtMessage.mdl-textfield__input(type="text" maxlength="120")
+            label.mdl-textfield__label Saisissez votre message...
+    dialog.mdl-dialog.mrsh-dialog
+      .mdl-dialog__content
+        form#desactive(autocomplete="off") 
+          .mdl-textfield.mdl-js-textfield.mrsh-tchat-textfield.mdl-textfield--floating-label
+            input#txtPseudo.mdl-textfield__input(type="text" maxlength="10")
+            label.mdl-textfield__label Entrez votre Pseudo...
+        .mdl-dialog__actions.mdl-dialog__actions--full-width
+        button#send.mdl-button.mdl-js-button.close Confirmer
+//- Inclut le code de script.pug
+include includes/script

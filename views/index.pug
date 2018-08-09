@@ -1,0 +1,20 @@
+//- Inclut le code de layout.pug
+include includes/layout
+    //- Carte Material Design
+    .mdl-card.mrsh-card.bg-indigo
+      .mdl-card__title.mrsh-title.white
+        h1.mdl-card__title-text.mrsh-title-text Marshmallow
+      .mdl-card__supporting-text.mrsh-subtitle.white.
+        Messagerie de tchat instantan&eacute;e
+    //- Flexbox contenant une image d'un côté et la description du projet de l'autre
+    .mrsh-flex-container
+      .mrsh-flex
+        img.mrsh-illustration(src="image/illustration.jpg")
+      .mrsh-flex
+        h3.mrsh-intro.
+          Marshmallow est un service de messagerie instantan&eacute;e d&eacute;velopp&eacute; par Dorian, Tanguy, Benjamin et L&eacute;o.
+        h3.mrsh-intro.
+          Il est propuls&eacute; par Node.js, stocke les donn&eacute;es via MongoDB, &eacute;met instantan&eacute;ment les messages grace &agrave; Socket.io et vous permet de vous authentifier au moyen de Passport.js.
+    include includes/footer
+//- Inclut le code de layout.pug
+include includes/script

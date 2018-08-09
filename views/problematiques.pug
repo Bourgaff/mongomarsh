@@ -1,0 +1,33 @@
+//- Inclut le code de layout.pug
+include includes/layout
+    //- Carte Material Design
+    .mdl-card.mdl-shadow--8dp.mrsh-prbl-card
+      h2 Introduction
+      p.mrsh-prbl-text.
+        Ci-dessous se trouvent résumée les différentes problématiques que nous avons rencontrés dans la réalisation de ce projet
+        et les solutions mises en oeuvre pour y remédier.
+      h3 Léo
+      p.mrsh-prbl-text.
+        Mis à part ma tentative avec Angular, je n'ai pas été confronté à beaucoup de problèmes. Au départ, je souhaitai
+        utiliser le framework de développement web Angular pour réaliser le serveur web. Les avantages d'Angular étaient
+        multipes : ES6, web component, TypeScript... Cependant, vu le retard pris dans la réalisation et les difficultés
+        liées à Angular lui-même, je me suis tourné vers le moteur de template Pug et le framework CSS Material Design Lite.
+      h3 Tanguy
+      p.mrsh-prbl-text.
+        Durant la réalisation de ce projet, plusieurs problèmes se sont présentés à moi. Tout d’abord, j’ai dû trouver un
+        moyen d’inscrire les utilisateurs dans la base de données. J’ai donc utilisé le module Passport qui permet normalement
+        de rentrer facilement des données dans une base de données.nEnsuite, j’ai dû utiliser Passport afin de rechercher des
+        utilisateurs dans la base de données et de vérifier si l’adresse mail rentrée existait et si le mot de passe rentré par
+        l’utilisateur correspondait. Pour cela, j’ai utlisé le NodeJS et passport. Enfin, J’ai dû lier le chat et le système
+        d’authentification. Cependant je n’ai malheureusement pas pas réussi à faire quelque chose de fonctionnel.
+      h3 Benjamin
+      p.mrsh-prbl-text.
+        Des difficultés pour s'adapter au moteur de template Pug. La partie authentification n'étant pas fonctionnelle,
+        je n'ai pas pu intégrer certaines fonctionnalités qui nécessitaient l'existence d'utilisateurs identifiables.
+        La syntaxe des expressions régulières (regex) demande une certaine connaissance de tous les attributs afin de
+        pouvoir créer un filtre sans faille.
+      h3 Dorian
+      p.mrsh-prbl-text.
+       [Dorian, insère tes problématiques ici !]
+//- Inclut le code de script.pug
+include includes/script
